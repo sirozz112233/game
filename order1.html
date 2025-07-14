@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>สั่งซื้อสินค้า | GameShopTH</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #0e0e0e;
+    color: #fff;
+    margin: 0; padding: 20px;
+  }
+  header {
+    background: linear-gradient(90deg, #ff3c00, #ff9d00);
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  }
+  header h1 {
+    margin: 0;
+  }
+  main {
+    max-width: 600px;
+    margin: 20px auto;
+    background: #222;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(255,60,0,0.5);
+  }
+  h2 {
+    margin-top: 0;
+    text-align: center;
+  }
+  label {
+    display: block;
+    margin: 15px 0 5px;
+  }
+  input[type=text],
+  input[type=email],
+  input[type=tel],
+  select {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1em;
+  }
+  button {
+    margin-top: 20px;
+    width: 100%;
+    background: #ff3c00;
+    color: #fff;
+    padding: 12px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  button:hover {
+    background: #ff9d00;
+  }
+  .order-summary {
+    background: #333;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+  .order-summary h3 {
+    margin-top: 0;
+  }
+  .order-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  .order-item span {
+    font-weight: bold;
+  }
+</style>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <img src="images/sirozz-logo.png" alt="Sirozz Shop Logo" class="logo">
+    <h1>Sirozz Shop</h1>
+     <link rel="stylesheet" href="css/logo.css">
+    <nav>
+        <a href="index.html">หน้าแรก</a>
+        <a href="products.html">สินค้า</a>
+        <a href="payment.html">แจ้งโอนเงิน</a>
+        <a href="contact.html">ติดต่อ</a>
+    </nav>
+    
+</header>
+<main>
+  <h2>ฟอร์มสั่งซื้อสินค้า</h2>
+
+  <div class="order-summary">
+    <h3>รายการสินค้า</h3>
+    <div class="order-item">
+      <div>เงิน FiveM 1,000,000$</div>
+      <div>150 บาท</div>
+    </div>
+  </div>
+
+  <form action="submit_order.php" method="POST">
+
+    <label for="payment_method">วิธีการชำระเงิน</label>
+    <select id="payment_method" name="payment_method" required>
+      <option value="">-- กรุณาเลือก --</option>
+      <option value="bank_transfer">โอนผ่านธนาคาร</option>
+      <option value="promptpay">พร้อมเพย์</option>
+    </select>
+
+    <button type="submit">ส่งคำสั่งซื้อ</button>
+  </form>
+</main>
+
+</body>
+</html>

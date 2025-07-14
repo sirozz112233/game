@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameShopTH | ร้านขายของในเกมอันดับ 1</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-color: #0f0f0f;
+            color: #fff;
+        }
+
+        header {
+            background: #ff3c00;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .banner {
+            text-align: center;
+            position: relative;
+        }
+
+        .banner img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            opacity: 0.85;
+        }
+
+        .banner .banner-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .banner .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: #ff3c00;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .product-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .product-item {
+            background: #222;
+            padding: 10px;
+            border-radius: 10px;
+            width: 220px;
+            text-align: center;
+        }
+
+        .product-item img {
+            width: 100%;
+            border-radius: 5px;
+            height: 140px;
+            object-fit: cover;
+        }
+
+        footer {
+            background: #111;
+            text-align: center;
+            padding: 20px 10px;
+            font-size: 0.9em;
+            margin-top: 40px;
+        }
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <img src="images/sirozz-logo.png" alt="Sirozz Shop Logo" class="logo">
+    <h1>Sirozz Shop</h1>
+     <link rel="stylesheet" href="css/logo.css">
+    <nav>
+        <a href="index.html">หน้าแรก</a>
+        <a href="products.html">สินค้า</a>
+        <a href="payment.html">แจ้งโอนเงิน</a>
+        <a href="contact.html">ติดต่อ</a>
+    </nav>
+    
+</header>
+
+
+<section class="banner">
+    <img src="images/พื้นหลัง.png" alt="โปรโมชั่นเกม">
+    <div class="banner-text">
+        <h2>🔥 โปรแรง! เติมเกมวันนี้ รับโบนัสเพิ่มฟรี 10%</h2>
+        <p>ปลอดภัย ส่งไว ได้ของครบ 100%</p>
+        <a href="products.html" class="btn">เลือกสินค้าตอนนี้</a>
+    </div>
+</section>
+
+<main>
+    <section class="intro">
+        <h2>สินค้าแนะนำ</h2>
+        <div class="product-gallery">
+            <div class="product-item">
+                <img src="https://i.ibb.co/PYCTMNz/fivem-money2.jpg" alt="เงิน FiveM">
+                <h3>เงิน FiveM 1,000,000$</h3>
+                <p>ราคา: 150 บาท</p>
+            </div>
+
+            <div class="product-item">
+                <img src="https://i.ibb.co/58qkPxY/minecraft-diamond2.jpg" alt="เพชร Minecraft">
+                <h3>เพชร Minecraft 100 เม็ด</h3>
+                <p>ราคา: 100 บาท</p>
+            </div>
+
+            <div class="product-item">
+                <img src="https://i.ibb.co/Sd4QnXr/pubg-skin2.jpg" alt="สกิน PUBG">
+                <h3>สกิน PUBG ระดับแรร์</h3>
+                <p>ราคา: 200 บาท</p>
+            </div>
+
+            <div class="product-item">
+                <img src="https://i.ibb.co/K9ksNvg/valorant-skin.jpg" alt="สกิน Valorant">
+                <h3>สกิน Valorant</h3>
+                <p>ราคา: 250 บาท</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer id="contact">
+    <p>ติดต่อเรา: Line: @gameshopth | Discord: GameShopTH#1234</p>
+    <p>&copy; 2025 GameShopTH | All rights reserved.</p>
+</footer>
+
+</body>
+</html>

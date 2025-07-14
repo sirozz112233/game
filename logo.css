@@ -1,0 +1,17 @@
+.logo {
+    width: 60px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+header {
+    display: flex;
+    align-items: center;
+    background: #0f0f0f;
+    padding: 15px 30px;
+    color: white;
+}
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}

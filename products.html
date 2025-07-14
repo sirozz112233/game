@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>สินค้า | GameShopTH</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: #0e0e0e;
+            color: #fff;
+        }
+        header {
+            background: linear-gradient(90deg, #ff3c00, #ff9d00);
+            text-align: center;
+            padding: 20px 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+            letter-spacing: 2px;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #000;
+        }
+        .hero {
+            background: url('https://i.ibb.co/D4ZrjxK/banner-gaming.jpg') no-repeat center/cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            top:0; left:0; right:0; bottom:0;
+            background: rgba(0,0,0,0.5);
+        }
+        .hero h2 {
+            z-index: 1;
+            font-size: 2.5em;
+        }
+        main {
+            padding: 30px 20px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .product-card {
+            background: #1c1c1c;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(255,60,0,0.4);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 25px rgba(255,60,0,0.8);
+        }
+        .product-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .product-content {
+            padding: 15px;
+            text-align: center;
+        }
+        .product-content h3 {
+            margin: 0 0 10px;
+        }
+        .product-content p.price {
+            color: #ff9d00;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+        .buy-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 16px;
+            background: #ff3c00;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 20px;
+            transition: background 0.3s;
+        }
+        .buy-btn:hover {
+            background: #ff9d00;
+        }
+        footer {
+            background: #111;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            margin-top: 40px;
+        }
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <img src="images/sirozz-logo.png" alt="Sirozz Shop Logo" class="logo">
+    <h1>Sirozz Shop</h1>
+    <link rel="stylesheet" href="css/logo.css">
+    <nav>
+        <a href="index.html">หน้าแรก</a>
+        <a href="products.html">สินค้า</a>
+        <a href="payment.html">แจ้งโอนเงิน</a>
+        <a href="contact.html">ติดต่อ</a>
+    </nav>
+</header>
+
+<main>
+    <div class="product-grid">
+
+        <div class="product-card">
+            <img src="images/fivem.jpg" alt="เงิน FiveM" />
+            <div class="product-content">
+                <h3>Fivem</h3>
+                <p class="price">สินค้า 0 ชิ้น</p>
+                <a href="order1.html" class="buy-btn">สั่งซื้อ</a>
+                
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="images/ff.jpg"ฟีฟาย" />
+            <div class="product-content">
+                <h3>FreeFire</h3>
+                <p class="price">สินค้า 0 ชิ้น</p>
+                <a href="order2 FF.html" class="buy-btn">สั่งซื้อ</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="images/pubg.jpg" alt="สกิน PUBG" />
+            <div class="product-content">
+                <h3>PUBG</h3>
+                <p class="price">สินค้า 0 ชิ้น</p>
+                <a href="#" class="buy-btn">สั่งซื้อ</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="images/valo.png" alt="สกิน Valorant" />
+            <div class="product-content">
+                <h3>Valorant</h3>
+                <p class="price">สินค้า 0 ชิ้น</p>
+                <a href="#" class="buy-btn">สั่งซื้อ</a>
+            </div>
+        </div>
+
+        <!-- สินค้าเพิ่ม 4 ชิ้น -->
+
+        <div class="product-card">
+            <img src="images/apex.jpg" alt="สกิน Apex Legends" />
+            <div class="product-content">
+                <h3>Apex Legends</h3>
+                <p class="price">สินค้า 0 ชิ้น</p>
+                <a href="#" class="buy-btn">สั่งซื้อ</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="images/csgo.jpg" alt="มีด CS:GO" />
+            <div class="product-content">
+                <h3>CS:GO</h3>
+                <p class="price">สินค้า 0 ชิ้น</p>
+                <a href="#" class="buy-btn">สั่งซื้อ</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="images/roblox.jpg" alt="ไอเทม Roblox" />
+            <div class="product-content">
+                <h3>Roblox</h3>
+                <p class="price">สินค้า 0 ชิ้น</p>
+                <a href="#" class="buy-btn">สั่งซื้อ</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="images/fornite.jpg" alt="สกิน Fortnite" />
+            <div class="product-content">
+                <h3>Fortnite</h3>
+                <p class="price">สินค้า 0 ชิ้น</p>
+                <a href="#" class="buy-btn">สั่งซื้อ</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="images/minecraft.jpg" alt="เพชร Minecraft" />
+            <div class="product-content">
+                <h3>Minecraft</h3>
+                <p class="price">สินค้า 0 ชิ้น</p>
+                <a href="#" class="buy-btn">สั่งซื้อ</a>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    <p>Line: @gameshopth | Discord: GameShopTH#1234</p>
+    <p>&copy; 2025 GameShopTH | All rights reserved.</p>
+</footer>
+
+</body>
+</html>

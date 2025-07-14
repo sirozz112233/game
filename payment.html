@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เติมเงิน | GameShopTH</title>
+    <style>
+        body {
+            background-color: #0f0f0f;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background: #ff3c00;
+            text-align: center;
+            padding: 15px 0;
+        }
+        .container {
+            max-width: 700px;
+            margin: 30px auto;
+            background: #1a1a1a;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px #ff3c00aa;
+        }
+        h2 {
+            text-align: center;
+            color: #ff3c00;
+        }
+        .banks {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .banks img {
+            width: 100px;
+            border: 2px solid #ff3c00;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .banks img:hover {
+            transform: scale(1.1);
+        }
+        form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        form input, form select {
+            width: 100%;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        form input[type="file"] {
+            padding: 5px;
+        }
+        form button {
+            background: #ff3c00;
+            border: none;
+            padding: 12px 25px;
+            color: #fff;
+            font-weight: bold;
+            border-radius: 25px;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <img src="images/sirozz-logo.png" alt="Sirozz Shop Logo" class="logo">
+    <h1>Sirozz Shop</h1>
+     <link rel="stylesheet" href="css/logo.css">
+    <nav>
+        <a href="index.html">หน้าแรก</a>
+        <a href="products.html">สินค้า</a>
+        <a href="payment.html">แจ้งโอนเงิน</a>
+        <a href="contact.html">ติดต่อ</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>โอนเงินเข้าบัญชี</h2>
+
+    <div class="banks">
+        <img src="images/กสิกร.jpg" alt="ธนาคารกสิกรไทย">
+        <img src="images/paypal.jpg" alt="paypal">
+        <img src="images/ซอง.jpg" alt="ซอง">
+    </div>
+
+    <form>
+        <label>แนบสลิปโอนเงิน</label>
+        <input type="file">
+
+        <button type="submit">แจ้งโอนเงิน</button>
+    </form>
+</div>
+
+<footer>
+    <p>&copy; 2025 GameShopTH | ติดต่อ Line: @gameshopth</p>
+</footer>
+
+</body>
+</html>
